@@ -1,0 +1,25 @@
+---
+title: "Distill #462"
+description: |
+  Welcome to the website. I hope you enjoy it!
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+```
+
+Start the NW.js App by running the following commands in the console.
+
+```{r, eval=FALSE}
+rmarkdown::render_site()
+file.copy("package.json", "_site/package.json")
+system2(
+  "C:\\Program Files\\nwjs-sdk-v0.61.0\\nw.exe", # assuming nw.exe is installed there
+  "_site"
+)
+```

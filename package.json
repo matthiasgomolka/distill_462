@@ -1,0 +1,11 @@
+{
+    "name": "rdsc-landing-page",
+    "main": "index.html",
+	"window": {
+        "title": "RDSC Landing Page",
+        "icon": "figures/Submarke_Forschungsdaten_eng.jpg",
+        "position": "center",
+        "height": 1024,
+        "width": 1280
+    }
+}
